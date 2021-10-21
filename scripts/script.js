@@ -66,5 +66,18 @@ function cargarFormulario(){
         formulario.appendChild(saltoLinea5); //creo un salto de carro
     formulario.appendChild(inputSubmit);
 
-    document.body.appendChild(formulario);
+    var saltoLinea6 = document.createElement("br");    //<br></br> creo salto de linea
+    formulario.appendChild(saltoLinea6);
+    var linea = document.createElement("hr");
+    formulario.appendChild(linea);
+
+    let div = document.createElement("div");
+    div.id = "migue";
+
+    div.appendChild(formulario);
+
+
+    document.body.appendChild(div);
+
+   
 }
