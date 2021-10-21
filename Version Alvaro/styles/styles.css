@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form {
+    background-color: rgb(213, 211, 211);
+    width: 30rem;
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 2rem;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-right: .5rem;
+}
+
+input[type="submit"], input[type="reset"] {
+    font-size: 16px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+    
+    cursor: pointer;
+}
+
+input[type="text"] {
+    margin-bottom: .5rem;
+}
+
+img {
+    margin: 1rem;
+    width: 10rem;
+}
