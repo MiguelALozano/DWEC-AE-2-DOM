@@ -8,19 +8,26 @@ body {
 
 }
 
-/*Estilos generales del formulario*/
 #formulario {
-    margin: 0 auto;
     width: 80%;
     max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*Estilos generales del formulario*/
+form {
+    margin: 0 auto;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    
 }
 
 /* Estilos para el h2*/
-#formulario h2 {
+form h2 {
     text-align: center;
     font-variant: small-caps;
 }
@@ -31,10 +38,12 @@ body {
     height: auto;
     margin: 3% auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 1px;
 }
+
+
 
 .campos div:nth-child(6) {
     margin-top: 1%;

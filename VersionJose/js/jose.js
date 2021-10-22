@@ -2,7 +2,7 @@ function mostrarFormulario() {
 
     let texto = document.getElementById("formulario");
 
-        texto.innerHTML= `<form id="formulario" action="" 
+        texto.innerHTML= `<form action="" 
         method="get">
         <h2>Academia de baile - "Los 4 Jinetes"</h2>
         <div class="campos">
@@ -51,12 +51,12 @@ function mostrarFormulario() {
         </div>
         <div id="imagenes">
             <div id="foto1">
-                <img src="/VersionJose/images/preillumination-seth-M12-_qST8iQ-unsplash.jpg" alt="Bailes de salon">
+                <img src="./images/preillumination-seth-M12-_qST8iQ-unsplash.jpg" alt="Bailes de salon">
                 <div>Photo by <a href="https://unsplash.com/@7seth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Preillumination SeTh</a> on <a href="https://unsplash.com/s/photos/dance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                 </div>
             </div>
             <div id="foto2">
-                <img src="/VersionJose/images/ardian-lumi-6Woj_wozqmA-unsplash.jpg" alt="sbk">
+                <img src="./images/ardian-lumi-6Woj_wozqmA-unsplash.jpg" alt="sbk">
                 <div>Photo by <a href="https://unsplash.com/@ardianlumi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ardian Lumi</a> on <a href="https://unsplash.com/s/photos/ballrom-dance?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
                 </div>
             </div>
@@ -69,7 +69,7 @@ function mostrarFormulario() {
                 <option value="kizomba">Kizomba</option>
                 <option value="valsIngles">Vals Ingles</option>
                 <option value="tango">Tango</option>
-                <option value="tango">Otros</option>
+                <option value="otros">Otros</option>
             </select>
         </div>
     <div class="textarea">
@@ -79,7 +79,10 @@ function mostrarFormulario() {
             <input type="reset" value="Borrar">
             <input type="submit" value="Enviar">
     </div>
-    </form>`;
+    </form>
+    
+    <hr>
+    <hr>`;
 
     return texto;
 }
