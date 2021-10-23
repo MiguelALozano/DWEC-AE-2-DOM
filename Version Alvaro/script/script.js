@@ -1,8 +1,9 @@
+// Elemento sobre el que vamos a añadir el formulario
 const contenedor = document.querySelector('.contenedor');
 
 // Creamos los distintos elementos y añadimos sus atributos correspondientes
 const formulario = document.createElement("form");
-formulario.setAttribute("action", "blablabla.php");
+formulario.setAttribute("action", "ejemplo.php");
 formulario.setAttribute("method", "POST");
 
 const tituloPrincipal = document.createElement("h1");
@@ -39,6 +40,7 @@ telefono.setAttribute("placeholder", "Teléfono");
 const tituloGenero = document.createElement("h3");
 tituloGenero.textContent = "Género";
 
+// Label e input type="radio"
 const labelGenero1 = document.createElement("label");
 labelGenero1.setAttribute("for", "mujer");
 labelGenero1.textContent = "Mujer";
@@ -105,6 +107,7 @@ radioEstudios4.setAttribute("value", "universidad");
 const tituloIntereses = document.createElement("h3");
 tituloIntereses.textContent = "Intereses";
 
+// Label e input type="checkbox"
 const labelIntereses1 = document.createElement("label");
 labelIntereses1.setAttribute("for", "html");
 labelIntereses1.textContent = "HTML5";
@@ -161,8 +164,14 @@ tituloProvincia.textContent = "Provincia";
 const selectProvincia = document.createElement("select");
 selectProvincia.setAttribute("id", "select");
 
+// Creamos un array con distintas provincias
 const provincias = ["Madrid", "Barcelona", "Alicante", "Zaragoza"];
 
+// Por cada provincia:
+// 1. Creamos un <option></option>
+// 2. Le asignamos un value con el nombre de dicha provincia
+// 3. El contenido (texto) será el del propio elemento (Ej: "Madrid")
+// 4. Añadimos cada opción al <select></select>
 provincias.forEach(function(provincia) {
     let opcion = document.createElement("option");
     opcion.setAttribute("value", provincia);
@@ -173,6 +182,7 @@ provincias.forEach(function(provincia) {
 const tituloObservaciones = document.createElement("h3");
 tituloObservaciones.textContent = "Observaciones";
 
+// Creamos el elemento <textarea>
 const textArea = document.createElement("textarea");
 textArea.setAttribute("id", "observaciones");
 textArea.setAttribute("name", "observaciones");
@@ -187,6 +197,7 @@ const borrar = document.createElement("input");
 borrar.setAttribute("type", "reset");
 borrar.setAttribute("value", "Borrar");
 
+// Creamos las imágenes
 const imagen1 = document.createElement("img");
 imagen1.setAttribute("src", "images/imagen1.jpg");
 imagen1.setAttribute("alt", "imagen de código");
@@ -196,7 +207,7 @@ imagen2.setAttribute("src", "images/imagen2.jpg");
 imagen2.setAttribute("alt", "imagen de mac");
 
 
-// Añadimos los elementos creados
+// Añadimos los elementos creados al formulario
 formulario.append(tituloPrincipal, infoPersonal);
 formulario.append(dni, document.createElement("br"));
 formulario.append(nombre, document.createElement("br"));
